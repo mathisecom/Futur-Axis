@@ -114,24 +114,35 @@
         "image_AG7yxw": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/gempages_586639748592829123-8710e68c-d794-4d8b-931b-bc020999d17e.webp",
             "url": ""
           }
         },
         "image_47h6Vf": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/gempages_586639748592829123-32a750b3-b0d0-4b45-bd39-7466de8193b3.webp",
             "url": ""
           }
         },
         "image_ic9Ezx": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/gempages_586639748592829123-a1ed2919-4293-4773-9183-2ffe93ce94b9.webp",
             "url": ""
           }
         },
         "image_KRM4qa": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/gempages_586639748592829123-c1453e0e-77ca-4b97-9753-2c20c59bce23.webp",
+            "url": ""
+          }
+        },
+        "image_P7icdf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/gempages_586639748592829123-a574ad40-4f0d-4c4a-8ab9-9eed876d0b09.webp",
             "url": ""
           }
         }
@@ -140,7 +151,8 @@
         "image_AG7yxw",
         "image_47h6Vf",
         "image_ic9Ezx",
-        "image_KRM4qa"
+        "image_KRM4qa",
+        "image_P7icdf"
       ],
       "name": "SS - Scrolling logo cloud #5",
       "settings": {
@@ -169,7 +181,7 @@
         "margin_bottom": 0,
         "margin_horizontal": 0,
         "margin_horizontal_mobile": 0,
-        "padding_top": 36,
+        "padding_top": 12,
         "padding_bottom": 0,
         "padding_horizontal": 5,
         "padding_horizontal_mobile": 0,
