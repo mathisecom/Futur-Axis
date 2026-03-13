@@ -1,0 +1,696 @@
+{% comment %}
+  Section: GearMaster Hero Promo
+  Fichier : sections/gearmaster-promo.liquid
+  Entièrement personnalisable via l'éditeur de thème Shopify
+{% endcomment %}
+
+<section
+  id="gearmaster-promo-{{ section.id }}"
+  class="gearmaster-promo"
+  style="
+    background-color: {{ section.settings.bg_color }};
+    color: {{ section.settings.text_color }};
+    font-family: {{ section.settings.font_family }};
+  "
+>
+  <div class="gearmaster-inner">
+
+    {%- comment -%} ── TITRE PRINCIPAL ─────────────────────────────── {%- endcomment -%}
+    <div class="gm-headline">
+      {% if section.settings.headline_line1 != blank %}
+        <span class="gm-headline__line1" style="color:{{ section.settings.headline_color }};">
+          {{ section.settings.headline_line1 }}
+        </span>
+      {% endif %}
+      {% if section.settings.headline_line2 != blank %}
+        <span class="gm-headline__line2" style="color:{{ section.settings.headline_strikethrough_color }};">
+          <s>{{ section.settings.headline_line2_strikethrough }}</s>
+          {{ section.settings.headline_line2_after }}
+        </span>
+      {% endif %}
+      {% if section.settings.headline_line3 != blank %}
+        <span class="gm-headline__line3" style="color:{{ section.settings.headline_accent_color }};">
+          {{ section.settings.headline_line3 }}
+        </span>
+      {% endif %}
+    </div>
+
+    {%- comment -%} ── GRILLE CAPTURES D'ÉCRAN ──────────────────────── {%- endcomment -%}
+    <div class="gm-screenshots">
+      {% for block in section.blocks %}
+        {% if block.type == 'screenshot' %}
+          <div class="gm-screenshots__item" {{ block.shopify_attributes }}>
+            {% if block.settings.image != blank %}
+              <img
+                src="{{ block.settings.image | img_url: '200x' }}"
+                srcset="{{ block.settings.image | img_url: '200x' }} 1x, {{ block.settings.image | img_url: '400x' }} 2x"
+                alt="{{ block.settings.image_alt | escape }}"
+                loading="lazy"
+                width="200"
+                height="150"
+              >
+            {% else %}
+              <div class="gm-screenshots__placeholder">
+                <span>{{ block.settings.image_alt | default: 'Jeu' }}</span>
+              </div>
+            {% endif %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    {%- comment -%} ── GRILLE AVANTAGES ─────────────────────────────── {%- endcomment -%}
+    <div class="gm-features">
+      {% for block in section.blocks %}
+        {% if block.type == 'feature' %}
+          <div class="gm-features__item" {{ block.shopify_attributes }}>
+            <div class="gm-features__icon">
+              {% if block.settings.icon != blank %}
+                <img src="{{ block.settings.icon | img_url: '48x' }}" alt="" aria-hidden="true" width="40" height="40">
+              {% else %}
+                <span class="gm-features__icon-fallback">{{ block.settings.icon_emoji | default: '✦' }}</span>
+              {% endif %}
+            </div>
+            <div class="gm-features__text">
+              <strong style="color:{{ section.settings.feature_title_color }};">{{ block.settings.title }}</strong>
+              {% if block.settings.subtitle != blank %}
+                <span style="color:{{ section.settings.feature_sub_color }};">{{ block.settings.subtitle }}</span>
+              {% endif %}
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    {%- comment -%} ── BOUTON CTA ───────────────────────────────────── {%- endcomment -%}
+    {% if section.settings.cta_label != blank %}
+      <div class="gm-cta-wrap">
+        <a
+          href="{{ section.settings.cta_url }}"
+          class="gm-cta"
+          style="
+            background-color: {{ section.settings.cta_bg_color }};
+            color: {{ section.settings.cta_text_color }};
+            border-color: {{ section.settings.cta_border_color }};
+          "
+        >
+          {{ section.settings.cta_label }}
+        </a>
+      </div>
+    {% endif %}
+
+    {%- comment -%} ── SOUS-TITRE / DESCRIPTIF ──────────────────────── {%- endcomment -%}
+    {% if section.settings.subtext != blank %}
+      <p class="gm-subtext" style="color:{{ section.settings.subtext_color }};">
+        {{ section.settings.subtext }}
+      </p>
+    {% endif %}
+
+    {%- comment -%} ── IMAGE PRODUIT (manette) ──────────────────────── {%- endcomment -%}
+    {% if section.settings.product_image != blank %}
+      <div class="gm-product-img">
+        <img
+          src="{{ section.settings.product_image | img_url: '600x' }}"
+          srcset="{{ section.settings.product_image | img_url: '600x' }} 1x, {{ section.settings.product_image | img_url: '1200x' }} 2x"
+          alt="{{ section.settings.product_image_alt | default: 'Console GearMaster' | escape }}"
+          loading="lazy"
+          width="600"
+        >
+      </div>
+    {% endif %}
+
+  </div>
+</section>
+
+{%- comment -%} ════════════════════════════════════════════════════════
+    STYLES
+════════════════════════════════════════════════════════ {%- endcomment -%}
+<style>
+  #gearmaster-promo-{{ section.id }} {
+    --gm-max-width: {{ section.settings.max_width }}px;
+    --gm-gap: {{ section.settings.inner_gap }}px;
+    --gm-radius: {{ section.settings.border_radius }}px;
+    --gm-section-padding-v: {{ section.settings.padding_vertical }}px;
+    --gm-section-padding-h: {{ section.settings.padding_horizontal }}px;
+  }
+
+  .gearmaster-promo {
+    width: 100%;
+    overflow: hidden;
+    padding: var(--gm-section-padding-v) var(--gm-section-padding-h);
+    box-sizing: border-box;
+  }
+
+  .gearmaster-inner {
+    max-width: var(--gm-max-width);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gm-gap);
+    text-align: center;
+  }
+
+  /* ── Titre ──────────────────────────────────────────── */
+  .gm-headline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.18;
+    letter-spacing: -0.01em;
+  }
+
+  .gm-headline__line1 {
+    font-size: clamp(1.5rem, 5vw, 2.4rem);
+    font-weight: 700;
+  }
+
+  .gm-headline__line2 {
+    font-size: clamp(1.5rem, 5vw, 2.4rem);
+    font-weight: 700;
+  }
+
+  .gm-headline__line2 s {
+    text-decoration-thickness: 2px;
+  }
+
+  .gm-headline__line3 {
+    font-size: clamp(1.8rem, 6vw, 2.8rem);
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+
+  /* ── Screenshots ────────────────────────────────────── */
+  .gm-screenshots {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+    width: 100%;
+  }
+
+  .gm-screenshots__item {
+    border-radius: var(--gm-radius);
+    overflow: hidden;
+    aspect-ratio: 4/3;
+    background: #111;
+  }
+
+  .gm-screenshots__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+
+  .gm-screenshots__item:hover img {
+    transform: scale(1.06);
+  }
+
+  .gm-screenshots__placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1a1a2e;
+    color: #666;
+    font-size: 0.75rem;
+    padding: 4px;
+  }
+
+  /* ── Features ───────────────────────────────────────── */
+  .gm-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 20px;
+    width: 100%;
+    text-align: left;
+  }
+
+  .gm-features__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .gm-features__icon {
+    flex-shrink: 0;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .gm-features__icon img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+
+  .gm-features__icon-fallback {
+    font-size: 1.8rem;
+    line-height: 1;
+  }
+
+  .gm-features__text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .gm-features__text strong {
+    font-size: clamp(0.85rem, 3vw, 1rem);
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  .gm-features__text span {
+    font-size: clamp(0.78rem, 2.5vw, 0.9rem);
+    line-height: 1.3;
+  }
+
+  /* ── CTA ────────────────────────────────────────────── */
+  .gm-cta-wrap {
+    width: 100%;
+  }
+
+  .gm-cta {
+    display: block;
+    width: 100%;
+    padding: 16px 24px;
+    border-radius: var(--gm-radius);
+    border: 2px solid transparent;
+    font-size: clamp(0.9rem, 3.5vw, 1.1rem);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: filter 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+  }
+
+  .gm-cta:hover {
+    filter: brightness(1.1);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(0,0,0,0.3);
+  }
+
+  .gm-cta:active {
+    transform: translateY(0);
+    filter: brightness(0.95);
+  }
+
+  /* ── Subtext ────────────────────────────────────────── */
+  .gm-subtext {
+    font-size: clamp(0.85rem, 3vw, 1rem);
+    text-align: center;
+    line-height: 1.5;
+    margin: 0;
+    opacity: 0.85;
+  }
+
+  /* ── Product image ──────────────────────────────────── */
+  .gm-product-img {
+    width: 100%;
+    text-align: center;
+  }
+
+  .gm-product-img img {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    display: inline-block;
+  }
+
+  /* ── Responsive > tablette / desktop ───────────────── */
+  @media (min-width: 768px) {
+    .gearmaster-inner {
+      max-width: min(var(--gm-max-width), 560px);
+    }
+
+    .gm-features {
+      gap: 16px 32px;
+    }
+
+    .gm-cta {
+      max-width: 420px;
+      margin: 0 auto;
+      display: block;
+    }
+
+    .gm-cta-wrap {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .gearmaster-inner {
+      max-width: var(--gm-max-width);
+    }
+
+    .gm-screenshots {
+      gap: 10px;
+    }
+
+    .gm-product-img img {
+      max-width: 560px;
+    }
+  }
+</style>
+
+{%- comment -%} ════════════════════════════════════════════════════════
+    SCHEMA – Tous les réglages éditables dans l'admin Shopify
+════════════════════════════════════════════════════════ {%- endcomment -%}
+{% schema %}
+{
+  "name": "GearMaster Promo",
+  "tag": "section",
+  "class": "gearmaster-section",
+  "settings": [
+
+    {
+      "type": "header",
+      "content": "🎨 Couleurs générales"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Fond de section",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Couleur texte par défaut",
+      "default": "#111111"
+    },
+
+    {
+      "type": "header",
+      "content": "✏️ Titre principal"
+    },
+    {
+      "type": "text",
+      "id": "headline_line1",
+      "label": "Ligne 1 (ex: Vos 20 000 jeux)",
+      "default": "Vos 20 000 jeux"
+    },
+    {
+      "type": "color",
+      "id": "headline_color",
+      "label": "Couleur ligne 1",
+      "default": "#111111"
+    },
+    {
+      "type": "text",
+      "id": "headline_line2_strikethrough",
+      "label": "Ligne 2 – mot barré",
+      "default": "d'enfance"
+    },
+    {
+      "type": "text",
+      "id": "headline_line2_after",
+      "label": "Ligne 2 – texte après le barré",
+      "default": " dans une"
+    },
+    {
+      "type": "color",
+      "id": "headline_strikethrough_color",
+      "label": "Couleur ligne 2",
+      "default": "#111111"
+    },
+    {
+      "type": "text",
+      "id": "headline_line3",
+      "label": "Ligne 3 accent (ex: SEULE CONSOLE)",
+      "default": "SEULE CONSOLE"
+    },
+    {
+      "type": "color",
+      "id": "headline_accent_color",
+      "label": "Couleur ligne 3 accent",
+      "default": "#111111"
+    },
+
+    {
+      "type": "header",
+      "content": "✅ Avantages – couleurs"
+    },
+    {
+      "type": "color",
+      "id": "feature_title_color",
+      "label": "Couleur titre avantage",
+      "default": "#111111"
+    },
+    {
+      "type": "color",
+      "id": "feature_sub_color",
+      "label": "Couleur sous-titre avantage",
+      "default": "#555555"
+    },
+
+    {
+      "type": "header",
+      "content": "🔶 Bouton CTA"
+    },
+    {
+      "type": "text",
+      "id": "cta_label",
+      "label": "Texte du bouton",
+      "default": "DÉCOUVRIR LA GEARMASTER"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "Lien du bouton"
+    },
+    {
+      "type": "color",
+      "id": "cta_bg_color",
+      "label": "Fond du bouton",
+      "default": "#F47B20"
+    },
+    {
+      "type": "color",
+      "id": "cta_text_color",
+      "label": "Texte du bouton",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "cta_border_color",
+      "label": "Bordure du bouton",
+      "default": "#F47B20"
+    },
+
+    {
+      "type": "header",
+      "content": "📝 Sous-titre"
+    },
+    {
+      "type": "textarea",
+      "id": "subtext",
+      "label": "Texte descriptif sous le bouton",
+      "default": "La GearMaster réunit 70 consoles mythiques en une seule machine"
+    },
+    {
+      "type": "color",
+      "id": "subtext_color",
+      "label": "Couleur du sous-titre",
+      "default": "#333333"
+    },
+
+    {
+      "type": "header",
+      "content": "🎮 Image produit (manette / console)"
+    },
+    {
+      "type": "image_picker",
+      "id": "product_image",
+      "label": "Image produit"
+    },
+    {
+      "type": "text",
+      "id": "product_image_alt",
+      "label": "Texte alternatif image produit",
+      "default": "Console GearMaster"
+    },
+
+    {
+      "type": "header",
+      "content": "📐 Mise en page"
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "label": "Largeur max (px)",
+      "min": 320,
+      "max": 1200,
+      "step": 20,
+      "default": 480
+    },
+    {
+      "type": "range",
+      "id": "padding_vertical",
+      "label": "Padding vertical (px)",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_horizontal",
+      "label": "Padding horizontal (px)",
+      "min": 0,
+      "max": 80,
+      "step": 4,
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "inner_gap",
+      "label": "Espacement entre blocs (px)",
+      "min": 8,
+      "max": 60,
+      "step": 4,
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "Rayon des coins (px)",
+      "min": 0,
+      "max": 24,
+      "step": 2,
+      "default": 8
+    },
+    {
+      "type": "select",
+      "id": "font_family",
+      "label": "Police de caractère",
+      "options": [
+        { "value": "inherit", "label": "Thème par défaut" },
+        { "value": "'Arial Black', Arial, sans-serif", "label": "Arial Black" },
+        { "value": "Georgia, serif", "label": "Georgia" },
+        { "value": "'Trebuchet MS', sans-serif", "label": "Trebuchet MS" },
+        { "value": "Impact, Haettenschweiler, sans-serif", "label": "Impact" }
+      ],
+      "default": "inherit"
+    }
+  ],
+
+  "blocks": [
+    {
+      "type": "screenshot",
+      "name": "Capture de jeu",
+      "limit": 6,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image du jeu"
+        },
+        {
+          "type": "text",
+          "id": "image_alt",
+          "label": "Description (alt)",
+          "default": "Capture de jeu rétro"
+        }
+      ]
+    },
+    {
+      "type": "feature",
+      "name": "Avantage produit",
+      "limit": 6,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icône (image)"
+        },
+        {
+          "type": "text",
+          "id": "icon_emoji",
+          "label": "Icône emoji (si pas d'image)",
+          "default": "🎮"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Titre avantage",
+          "default": "20 000 jeux cultes"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Sous-titre avantage",
+          "default": "Sous-titre optionnel"
+        }
+      ]
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "GearMaster Promo",
+      "blocks": [
+        {
+          "type": "screenshot",
+          "settings": { "image_alt": "Dragon Ball Z" }
+        },
+        {
+          "type": "screenshot",
+          "settings": { "image_alt": "Frogger" }
+        },
+        {
+          "type": "screenshot",
+          "settings": { "image_alt": "Sonic" }
+        },
+        {
+          "type": "screenshot",
+          "settings": { "image_alt": "Tekken" }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "icon_emoji": "🎮",
+            "title": "20 000 jeux cultes"
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "icon_emoji": "💾",
+            "title": "70 systèmes",
+            "subtitle": "de l'ATARI jusqu'à la PSP"
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "icon_emoji": "⏱️",
+            "title": "30 secondes",
+            "subtitle": "pour tout installer"
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "icon_emoji": "🛡️",
+            "title": "Support français",
+            "subtitle": "et garantie à VIE"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
