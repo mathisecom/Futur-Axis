@@ -658,7 +658,7 @@
             "text_color": "#25035f",
             "text_gradient": "",
             "button_background": "#25035f",
-            "button_text_color": ""
+            "button_text_color": "#25035f"
           }
         }
       },
@@ -955,7 +955,7 @@
             "show_rating": true,
             "rating": 4,
             "author": "Lucas D.",
-            "title": "Testimonial 1",
+            "title": "Incroyable pour le prix !",
             "content": "<p>Incroyable pour le prix ! Plus de 20 000 jeux et ça marche nickel en WiFi avec mon fils. On kiffe.</p>"
           }
         },
@@ -1013,7 +1013,7 @@
         "text_color": "",
         "heading_color": "",
         "heading_gradient": "",
-        "testimonial_card_background": "",
+        "testimonial_card_background": "#fbfaff",
         "testimonial_card_text_color": ""
       }
     },
