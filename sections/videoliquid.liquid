@@ -1,0 +1,484 @@
+{% comment %}
+  Section: Vidéo + Texte (style Multijoueur)
+  Responsive PC & Mobile
+{% endcomment %}
+
+<section
+  id="section-{{ section.id }}"
+  class="video-feature-section"
+  style="
+    background-color: {{ section.settings.background_color }};
+  "
+>
+  <div class="video-feature-container">
+
+    {%- comment -%} Côté gauche : Vidéo ou Image {%- endcomment -%}
+    <div class="video-feature-media">
+      {%- if section.settings.video != blank -%}
+        <div class="video-feature-media__wrapper">
+          {{
+            section.settings.video
+            | video_tag:
+              autoplay: true,
+              loop: true,
+              muted: true,
+              playsinline: true,
+              class: 'video-feature-media__video'
+          }}
+        </div>
+      {%- elsif section.settings.video_url != blank -%}
+        <div class="video-feature-media__wrapper">
+          <video
+            class="video-feature-media__video"
+            autoplay
+            loop
+            muted
+            playsinline
+          >
+            <source src="{{ section.settings.video_url }}" type="video/mp4">
+          </video>
+        </div>
+      {%- elsif section.settings.image != blank -%}
+        <div class="video-feature-media__wrapper">
+          {{
+            section.settings.image
+            | image_url: width: 800
+            | image_tag:
+              class: 'video-feature-media__image',
+              loading: 'lazy',
+              alt: section.settings.image.alt
+          }}
+        </div>
+      {%- else -%}
+        <div class="video-feature-media__wrapper video-feature-media__placeholder">
+          {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
+        </div>
+      {%- endif -%}
+
+      {%- if section.settings.badge_text != blank -%}
+        <div class="video-feature-badge">
+          {%- if section.settings.badge_icon != blank -%}
+            <img
+              src="{{ section.settings.badge_icon | image_url: width: 24 }}"
+              alt=""
+              width="24"
+              height="24"
+              loading="lazy"
+            >
+          {%- endif -%}
+          <span>{{ section.settings.badge_text }}</span>
+        </div>
+      {%- endif -%}
+    </div>
+
+    {%- comment -%} Côté droit : Texte + CTA {%- endcomment -%}
+    <div class="video-feature-content">
+
+      {%- if section.settings.eyebrow != blank -%}
+        <p class="video-feature-content__eyebrow">
+          {{ section.settings.eyebrow }}
+        </p>
+      {%- endif -%}
+
+      {%- if section.settings.heading != blank -%}
+        <h2 class="video-feature-content__heading">
+          {{ section.settings.heading }}
+        </h2>
+      {%- endif -%}
+
+      {%- if section.settings.text != blank -%}
+        <div class="video-feature-content__text">
+          {{ section.settings.text }}
+        </div>
+      {%- endif -%}
+
+      {%- if section.settings.button_label != blank -%}
+        <a
+          href="{{ section.settings.button_link | default: '#' }}"
+          class="video-feature-content__cta"
+          {% if section.settings.button_link == blank %}
+            aria-disabled="true"
+          {% endif %}
+        >
+          {{ section.settings.button_label }}
+        </a>
+      {%- endif -%}
+
+    </div>
+
+  </div>
+</section>
+
+<style>
+  /* ============================================================
+     VARIABLES
+  ============================================================ */
+  #section-{{ section.id }} {
+    --vf-bg:            {{ section.settings.background_color }};
+    --vf-heading-color: {{ section.settings.heading_color }};
+    --vf-text-color:    {{ section.settings.text_color }};
+    --vf-btn-bg:        {{ section.settings.button_bg_color }};
+    --vf-btn-text:      {{ section.settings.button_text_color }};
+    --vf-btn-radius:    50px;
+    --vf-media-radius:  16px;
+    --vf-gap:           60px;
+    --vf-padding-v:     80px;
+    --vf-padding-h:     40px;
+  }
+
+  /* ============================================================
+     SECTION WRAPPER
+  ============================================================ */
+  .video-feature-section {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  /* ============================================================
+     CONTAINER : Layout flex côte à côte
+  ============================================================ */
+  .video-feature-container {
+    display: flex;
+    flex-direction: {{ section.settings.media_position }};
+    align-items: center;
+    gap: var(--vf-gap);
+    max-width: {{ section.settings.container_width }}px;
+    margin: 0 auto;
+    padding: var(--vf-padding-v) var(--vf-padding-h);
+  }
+
+  /* ============================================================
+     MEDIA (Vidéo / Image)
+  ============================================================ */
+  .video-feature-media {
+    position: relative;
+    flex: 0 0 45%;
+    max-width: 45%;
+  }
+
+  .video-feature-media__wrapper {
+    position: relative;
+    border-radius: var(--vf-media-radius);
+    overflow: hidden;
+    line-height: 0;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    aspect-ratio: 4 / 3;
+  }
+
+  .video-feature-media__video,
+  .video-feature-media__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: var(--vf-media-radius);
+  }
+
+  .video-feature-media__placeholder {
+    background: rgba(255, 255, 255, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 280px;
+  }
+
+  .video-feature-media__placeholder .placeholder-svg {
+    width: 60%;
+    opacity: 0.3;
+  }
+
+  /* Badge superposé */
+  .video-feature-badge {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(8px);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    padding: 8px 14px;
+    border-radius: 8px;
+  }
+
+  .video-feature-badge img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+  }
+
+  /* ============================================================
+     CONTENT (Texte)
+  ============================================================ */
+  .video-feature-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .video-feature-content__eyebrow {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--vf-btn-bg);
+    margin: 0;
+  }
+
+  .video-feature-content__heading {
+    font-size: clamp(26px, 3.5vw, 42px);
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--vf-heading-color);
+    margin: 0;
+  }
+
+  .video-feature-content__text {
+    font-size: clamp(14px, 1.6vw, 17px);
+    line-height: 1.7;
+    color: var(--vf-text-color);
+    margin: 0;
+    max-width: 520px;
+  }
+
+  .video-feature-content__text p {
+    margin: 0;
+  }
+
+  /* Bouton CTA */
+  .video-feature-content__cta {
+    display: inline-block;
+    width: 100%;
+    max-width: 460px;
+    padding: 18px 32px;
+    background: var(--vf-btn-bg);
+    color: var(--vf-btn-text);
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: var(--vf-btn-radius);
+    transition: filter 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+    margin-top: 8px;
+  }
+
+  .video-feature-content__cta:hover {
+    filter: brightness(1.12);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  }
+
+  .video-feature-content__cta:active {
+    transform: translateY(0);
+    filter: brightness(0.95);
+  }
+
+  /* ============================================================
+     RESPONSIVE — Tablette
+  ============================================================ */
+  @media screen and (max-width: 1024px) {
+    #section-{{ section.id }} {
+      --vf-gap: 40px;
+      --vf-padding-v: 60px;
+      --vf-padding-h: 32px;
+    }
+  }
+
+  /* ============================================================
+     RESPONSIVE — Mobile
+  ============================================================ */
+  @media screen and (max-width: 749px) {
+    #section-{{ section.id }} {
+      --vf-gap: 28px;
+      --vf-padding-v: 48px;
+      --vf-padding-h: 20px;
+    }
+
+    .video-feature-container {
+      flex-direction: column !important; /* toujours colonne sur mobile */
+    }
+
+    .video-feature-media {
+      flex: 0 0 100%;
+      max-width: 100%;
+      width: 100%;
+    }
+
+    .video-feature-content {
+      width: 100%;
+      align-items: flex-start;
+    }
+
+    .video-feature-content__cta {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Vidéo + Texte",
+  "tag": "section",
+  "class": "video-feature",
+  "settings": [
+    {
+      "type": "header",
+      "content": "🎨 Mise en page"
+    },
+    {
+      "type": "select",
+      "id": "media_position",
+      "label": "Position de la vidéo",
+      "options": [
+        { "value": "row",         "label": "Vidéo à gauche" },
+        { "value": "row-reverse", "label": "Vidéo à droite" }
+      ],
+      "default": "row"
+    },
+    {
+      "type": "range",
+      "id": "container_width",
+      "label": "Largeur max du conteneur (px)",
+      "min": 800,
+      "max": 1600,
+      "step": 40,
+      "default": 1280
+    },
+    {
+      "type": "header",
+      "content": "🎥 Média"
+    },
+    {
+      "type": "video",
+      "id": "video",
+      "label": "Vidéo (fichier Shopify)"
+    },
+    {
+      "type": "text",
+      "id": "video_url",
+      "label": "URL vidéo externe (.mp4)",
+      "info": "Utilisé si aucun fichier vidéo n'est sélectionné ci-dessus."
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image de fallback",
+      "info": "Affichée si aucune vidéo n'est définie."
+    },
+    {
+      "type": "header",
+      "content": "🏷 Badge (optionnel)"
+    },
+    {
+      "type": "text",
+      "id": "badge_text",
+      "label": "Texte du badge",
+      "default": "ARCADIA"
+    },
+    {
+      "type": "image_picker",
+      "id": "badge_icon",
+      "label": "Icône du badge"
+    },
+    {
+      "type": "header",
+      "content": "✏️ Texte"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Sous-titre (au-dessus du titre)"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Titre principal",
+      "default": "JOUEZ EN MULTIJOUEUR !"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Description",
+      "default": "<p>Vivez l'expérience ultime des classiques du jeu vidéo grâce au mode ONLINE ! Connectez facilement votre console au WiFi et affrontez ou coopérez avec vos amis en toute simplicité grâce au mode MULTIJOUEUR.</p>"
+    },
+    {
+      "type": "header",
+      "content": "🔘 Bouton CTA"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Texte du bouton",
+      "default": "Profiter de l'offre !"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Lien du bouton"
+    },
+    {
+      "type": "header",
+      "content": "🎨 Couleurs"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Fond de la section",
+      "default": "#1a0a4a"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Couleur du titre",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Couleur du texte",
+      "default": "#c8c0e8"
+    },
+    {
+      "type": "color",
+      "id": "button_bg_color",
+      "label": "Fond du bouton",
+      "default": "#8b6dff"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Texte du bouton",
+      "default": "#ffffff"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Vidéo + Texte",
+      "settings": {
+        "heading": "JOUEZ EN MULTIJOUEUR !",
+        "text": "<p>Vivez l'expérience ultime des classiques du jeu vidéo grâce au mode ONLINE ! Connectez facilement votre console au WiFi et affrontez ou coopérez avec vos amis en toute simplicité grâce au mode MULTIJOUEUR.</p>",
+        "button_label": "Profiter de l'offre !",
+        "badge_text": "ARCADIA",
+        "background_color": "#1a0a4a",
+        "heading_color": "#ffffff",
+        "text_color": "#c8c0e8",
+        "button_bg_color": "#8b6dff",
+        "button_text_color": "#ffffff",
+        "media_position": "row",
+        "container_width": 1280
+      }
+    }
+  ]
+}
+{% endschema %}
