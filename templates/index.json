@@ -656,11 +656,11 @@
       "name": "Scrolling text",
       "settings": {
         "full_width": true,
-        "text": "Promotion text",
+        "text": "Accédez au rétro sans limites, partout !",
         "text_size": "xsmall",
         "text_style": "fill",
         "scrolling_mode": "auto",
-        "scrolling_speed": 10,
+        "scrolling_speed": 7,
         "background": "#25035f",
         "background_gradient": "",
         "text_color": "#ffffff",
