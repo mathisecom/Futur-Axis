@@ -550,6 +550,7 @@
         "logo_7TJ7RB": {
           "type": "logo",
           "settings": {
+            "logo": "shopify://shop_images/CREA_1080X1080_-_2026-03-14T161828.689.jpg",
             "logo_width": 150,
             "link": ""
           }
@@ -557,6 +558,7 @@
         "logo_wHiAPX": {
           "type": "logo",
           "settings": {
+            "logo": "shopify://shop_images/CREA_1080X1080_-_2026-03-14T161921.548.jpg",
             "logo_width": 150,
             "link": ""
           }
@@ -564,7 +566,7 @@
         "logo_eY9CPW": {
           "type": "logo",
           "settings": {
-            "logo_width": 120,
+            "logo_width": 150,
             "link": ""
           }
         }
