@@ -469,6 +469,7 @@
         "image_RzJUw9": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/gempages_530120367851701146-a9e4f665-8732-46f7-a778-1b9e38fc5217_768x_c40468cc-4df6-490c-a3e1-12327929aa05.webp",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center text-center",
