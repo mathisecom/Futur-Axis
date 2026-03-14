@@ -103,8 +103,8 @@
         "product_image_alt": "",
         "max_width": 480,
         "padding_vertical": 20,
-        "padding_horizontal": 20,
-        "inner_gap": 24,
+        "padding_horizontal": 16,
+        "inner_gap": 20,
         "border_radius": 8,
         "font_family": "inherit"
       }
