@@ -636,6 +636,22 @@
         "button_text_color": "#ffffff"
       }
     },
+    "scrolling_text_7866ER": {
+      "type": "scrolling-text",
+      "name": "Scrolling text",
+      "settings": {
+        "full_width": true,
+        "text": "Promotion text",
+        "text_size": "xsmall",
+        "text_style": "fill",
+        "scrolling_mode": "auto",
+        "scrolling_speed": 10,
+        "background": "#25035f",
+        "background_gradient": "",
+        "text_color": "#ffffff",
+        "text_gradient": ""
+      }
+    },
     "tabsvs_4JQfAY": {
       "type": "tabsvs",
       "blocks": {
@@ -783,7 +799,7 @@
         "padding_top": 0,
         "padding_bottom": 24,
         "padding_sides": 24,
-        "mobile_padding_top": 0,
+        "mobile_padding_top": 36,
         "mobile_padding_bottom": 0,
         "mobile_padding_sides": 16,
         "width": "custom",
@@ -1089,6 +1105,7 @@
     "logo_list_YpqEcF",
     "videoliquid_4nzUCq",
     "imagetexte_edHfjT",
+    "scrolling_text_7866ER",
     "tabsvs_4JQfAY",
     "logoscroll_WNJxWK",
     "rich_text_hzCzaY",
