@@ -196,16 +196,22 @@
     "featured_product_fLtNjc": {
       "type": "featured-product",
       "blocks": {
+        "liquid_4q6czM": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div class=\"product-info__block-item\" data-block-id=\"liquid_GyWjwG\" data-block-type=\"liquid\">\n  <div class=\"product-info__liquid\">\n    <div class=\"main-product__block main-product__block-custom_liquid\">\n      <div class=\"m-product-text\">\n        <style>\n          .badges-container {\n            display: flex;\n            flex-wrap: wrap;\n            gap: 8px;\n            align-items: center;\n            padding: 0;\n            margin: 0;\n          }\n          .badge-outline {\n            display: inline-flex;\n            align-items: center;\n            gap: 6px;\n            padding: 5px 12px;\n            font-size: 12px;\n            font-weight: 600;\n            color: #111;\n            background-color: #ffffff;\n            border: 1.5px solid #d1d5db;\n            border-radius: 20px;\n            white-space: nowrap;\n          }\n          .badge-outline svg {\n            flex-shrink: 0;\n          }\n        </style>\n        <div class=\"badges-container\">\n\n          <!-- + 20 000 jeux intégrés -->\n          <div class=\"badge-outline\">\n            <svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n              <path d=\"M6 12h4M8 10v4M15 12h.01M18 12h.01M3 7h18a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1Z\" stroke=\"#111\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n            </svg>\n            + 20,000 Jeux\n          </div>\n\n          <!-- Multijoueur WiFi -->\n          <div class=\"badge-outline\">\n            <svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n              <path d=\"M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01\" stroke=\"#111\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n            </svg>\n            Multijoueur WiFi\n          </div>\n\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
+          }
+        },
         "liquid_3HW69H": {
           "type": "liquid",
           "settings": {
             "liquid": "<div class=\"product-info__block-item\" data-block-id=\"liquid_xrwBGz\" data-block-type=\"liquid\"><div class=\"product-info__liquid\">\n              <div class=\"product-info__block-item\" data-block-id=\"liquid_VYgyhr\" data-block-type=\"liquid\"><div class=\"product-info__liquid\">\n              <div class=\"product-info__block-item\" data-block-id=\"liquid_ayckTY\" data-block-type=\"liquid\">\n  <div class=\"product-info__liquid\">\n    <div class=\"main-product__block main-product__block-custom_liquid\">\n      <div class=\"m-product-text\">\n        <div class=\"main-product__block main-product__block-custom_liquid\">\n          <div class=\"m-product-text\">\n            <div class=\"main-product__block main-product__block-custom_liquid\">\n              <div class=\"m-product-text\">\n                <div class=\"product-info__liquid\">\n                  <a class=\"image-size\" style=\"display: flex; align-items: center; gap: 8px;\">\n                    <img src=\"https://cdn.shopify.com/s/files/1/0776/3751/7627/files/avis.png?v=1687213619\" alt=\"Étoiles\" width=\"63\" height=\"13\">\n                    <span class=\"text-size\">Noté <b>4,8/5</b> sur la base de 3,380 avis</span>\n                  </a>\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n            </div></div>\n            </div></div>"
           }
         },
-        "title_RyNmNr": {
-          "type": "title",
+        "text_ATX8WV": {
+          "type": "text",
           "settings": {
-            "heading_tag": "h3"
+            "text": "<h3>Console de Jeux Rétro de Poche - FuturAxis™</h3>"
           }
         },
         "price_7Wy76k": {
@@ -301,8 +307,9 @@
         }
       },
       "block_order": [
+        "liquid_4q6czM",
         "liquid_3HW69H",
-        "title_RyNmNr",
+        "text_ATX8WV",
         "price_7Wy76k",
         "liquid_t3U4zt",
         "rating_LRRndH",
