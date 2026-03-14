@@ -464,6 +464,26 @@
         "logo_item_border": ""
       }
     },
+    "videoliquid_DqkYUN": {
+      "type": "videoliquid",
+      "name": "Vidéo + Texte",
+      "settings": {
+        "media_position": "row",
+        "container_width": 1200,
+        "video_url": "",
+        "badge_text": "",
+        "eyebrow": "",
+        "heading": "JOUEZ EN MULTIJOUEUR !",
+        "text": "<p>Vivez l'expérience ultime des classiques du jeu vidéo grâce au mode ONLINE ! Connectez facilement votre console au WiFi et affrontez ou coopérez avec vos amis en toute simplicité grâce au mode MULTIJOUEUR.</p>",
+        "button_label": "Profiter de l'offre !",
+        "button_link": "",
+        "background_color": "#1a0a4a",
+        "heading_color": "#ffffff",
+        "text_color": "#c8c0e8",
+        "button_bg_color": "#8b6dff",
+        "button_text_color": "#ffffff"
+      }
+    },
     "media_with_text_EMB9hR": {
       "type": "media-with-text",
       "blocks": {
@@ -891,6 +911,7 @@
     "featured_product_fLtNjc",
     "logoscroll_MUEA48",
     "press_fXhPaW",
+    "videoliquid_DqkYUN",
     "media_with_text_EMB9hR",
     "tabsvs_4JQfAY",
     "logoscroll_WNJxWK",
