@@ -1010,13 +1010,21 @@
             "title": "La qualité graphique est-elle améliorée ou fidèle aux jeux d'origine ?",
             "content": "<p>Les jeux sont émulés de manière à conserver l'authenticité des graphismes originaux. Cependant, la plupart des consoles modernes de rétrogaming, y compris celle-ci, offrent la possibilité de jouer avec une meilleure résolution.</p><p>Vous pouvez également ajuster certains paramètres d'affichage pour améliorer la qualité visuelle tout en gardant l'esprit rétro</p>"
           }
+        },
+        "item_9W66Cm": {
+          "type": "item",
+          "settings": {
+            "title": "Est-il facile de trouver et de lancer les jeux sur cette console ?",
+            "content": "<p>Oui, la console est équipée de fonctionnalités avancées comme la recherche de jeux et la mise en favoris, ce qui facilite l'accès aux jeux dans une bibliothèque aussi vaste. </p><p>Vous pouvez rapidement trouver le titre que vous cherchez et sauvegarder vos préférences pour un accès rapide ultérieur</p>"
+          }
         }
       },
       "block_order": [
         "166442457738b23caf-0",
         "166442457738b23caf-1",
         "166442457738b23caf-2",
-        "item_3gaEBm"
+        "item_3gaEBm",
+        "item_9W66Cm"
       ],
       "settings": {
         "full_width": false,
