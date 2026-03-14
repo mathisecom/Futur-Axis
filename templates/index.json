@@ -204,7 +204,7 @@
         "title_RyNmNr": {
           "type": "title",
           "settings": {
-            "heading_tag": "h3"
+            "heading_tag": "h4"
           }
         },
         "badges_qmmCPU": {
