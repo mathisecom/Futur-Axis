@@ -207,10 +207,6 @@
             "heading_tag": "h4"
           }
         },
-        "badges_qmmCPU": {
-          "type": "badges",
-          "settings": {}
-        },
         "price_7Wy76k": {
           "type": "price",
           "settings": {
@@ -300,7 +296,6 @@
       "block_order": [
         "liquid_3HW69H",
         "title_RyNmNr",
-        "badges_qmmCPU",
         "price_7Wy76k",
         "rating_LRRndH",
         "separator_JKMJmi",
@@ -395,7 +390,7 @@
         "scrolling_gap": 70,
         "scrolling_gap_mobile": 14,
         "card_width_desktop": 130,
-        "card_width_mobile": 140,
+        "card_width_mobile": 130,
         "heading_color": "#121212",
         "layout_bg_color": "#ffffff",
         "layout_border_color": "#121212",
