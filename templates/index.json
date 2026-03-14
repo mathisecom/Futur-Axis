@@ -716,7 +716,7 @@
         "feature_row_jm9PWk": {
           "type": "feature_row",
           "settings": {
-            "feature_name": "Multivitamins",
+            "feature_name": "Jouez en multijoueur",
             "primary_has_feature": true,
             "competitor_has_feature": false
           }
@@ -724,7 +724,7 @@
         "feature_row_3x7mMe": {
           "type": "feature_row",
           "settings": {
-            "feature_name": "Antioxidants",
+            "feature_name": "Écran Haute résolution",
             "primary_has_feature": true,
             "competitor_has_feature": false
           }
@@ -732,7 +732,7 @@
         "feature_row_HxGh3B": {
           "type": "feature_row",
           "settings": {
-            "feature_name": "Gut-friendly Bacteria",
+            "feature_name": "Garantie de 2 Ans Incluse",
             "primary_has_feature": true,
             "competitor_has_feature": false
           }
@@ -740,7 +740,7 @@
         "feature_row_mhRQpW": {
           "type": "feature_row",
           "settings": {
-            "feature_name": "Gut-friendly Fibre",
+            "feature_name": "Ajouter des jeux en illimités",
             "primary_has_feature": true,
             "competitor_has_feature": false
           }
@@ -748,17 +748,17 @@
         "feature_row_EBwimR": {
           "type": "feature_row",
           "settings": {
-            "feature_name": "High Quality Adaptogens",
+            "feature_name": "Rapidité : RAM PUISSANTE",
             "primary_has_feature": true,
             "competitor_has_feature": false
           }
         },
-        "text_row_AKq8Lm": {
-          "type": "text_row",
+        "feature_row_LdKkjb": {
+          "type": "feature_row",
           "settings": {
-            "feature_name": "Benefits in",
-            "primary_text": "One Scoop",
-            "competitor_text": "Multi-Supp."
+            "feature_name": "Port jack intégré",
+            "primary_has_feature": true,
+            "competitor_has_feature": false
           }
         }
       },
@@ -770,7 +770,7 @@
         "feature_row_HxGh3B",
         "feature_row_mhRQpW",
         "feature_row_EBwimR",
-        "text_row_AKq8Lm"
+        "feature_row_LdKkjb"
       ],
       "name": "SS - Comparison table #29",
       "settings": {
