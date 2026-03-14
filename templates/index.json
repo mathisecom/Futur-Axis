@@ -15,24 +15,28 @@
         "screenshot_b7iht9": {
           "type": "screenshot",
           "settings": {
+            "image": "shopify://shop_images/Nouveau_projet_7.jpg",
             "image_alt": "Dragon Ball Z"
           }
         },
         "screenshot_Xj4zCP": {
           "type": "screenshot",
           "settings": {
+            "image": "shopify://shop_images/Nouveau_projet_8.jpg",
             "image_alt": "Frogger"
           }
         },
         "screenshot_xpyrz7": {
           "type": "screenshot",
           "settings": {
+            "image": "shopify://shop_images/Nouveau_projet_10.jpg",
             "image_alt": "Sonic"
           }
         },
         "screenshot_79miGt": {
           "type": "screenshot",
           "settings": {
+            "image": "shopify://shop_images/Nouveau_projet_9.jpg",
             "image_alt": "Tekken"
           }
         },
