@@ -20,10 +20,18 @@
             "text": "Offre Printemps : Économisez 50% + Livraison Offerte",
             "url": ""
           }
+        },
+        "message_zpD4Ad": {
+          "type": "message",
+          "settings": {
+            "text": "Retours GRATUITS sous 14 jours",
+            "url": ""
+          }
         }
       },
       "block_order": [
-        "message"
+        "message",
+        "message_zpD4Ad"
       ],
       "settings": {
         "enable_sticky": false,
