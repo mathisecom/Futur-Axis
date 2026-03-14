@@ -318,6 +318,142 @@
         "input_text_color": ""
       }
     },
+    "logoscroll_MUEA48": {
+      "type": "logoscroll",
+      "blocks": {
+        "image_gqGXha": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/BANNER_MOBILE_81.jpg",
+            "url": ""
+          }
+        },
+        "image_tdcMqt": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/BANNER_MOBILE_82.jpg",
+            "url": ""
+          }
+        },
+        "image_wYqBkH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/BANNER_MOBILE_83.jpg",
+            "url": ""
+          }
+        },
+        "image_8BFaRK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/BANNER_MOBILE_84.jpg",
+            "url": ""
+          }
+        },
+        "image_TX7YKh": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/BANNER_MOBILE_85.jpg",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_gqGXha",
+        "image_tdcMqt",
+        "image_wYqBkH",
+        "image_8BFaRK",
+        "image_TX7YKh"
+      ],
+      "name": "SS - Scrolling logo cloud #5",
+      "settings": {
+        "layout_radius": 30,
+        "layout_border_thickness": 0,
+        "heading": "",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 18,
+        "heading_size_mobile": 18,
+        "heading_height": 130,
+        "scrolling_velocity": 24,
+        "scrolling_velocity_mobile": 20,
+        "scrolling_direction": "left",
+        "pause_hover": false,
+        "scrolling_gap": 70,
+        "scrolling_gap_mobile": 14,
+        "card_width_desktop": 130,
+        "card_width_mobile": 140,
+        "heading_color": "#121212",
+        "layout_bg_color": "#ffffff",
+        "layout_border_color": "#121212",
+        "background_color": "#ffffff",
+        "border_color": "#121212",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 0,
+        "full_width": false,
+        "content_width": 1200,
+        "border_thickness": 0,
+        "section_radius": 0,
+        "lazy": true
+      }
+    },
+    "press_fXhPaW": {
+      "type": "press",
+      "blocks": {
+        "quote_CQ38dA": {
+          "type": "quote",
+          "settings": {
+            "logo_width": 100,
+            "author": "",
+            "content": "Write some content about what they says about your store.",
+            "show_rating": true,
+            "rating": 5
+          }
+        },
+        "quote_t8B6hq": {
+          "type": "quote",
+          "settings": {
+            "logo_width": 100,
+            "author": "",
+            "content": "Write some content about what they says about your store.",
+            "show_rating": true,
+            "rating": 4
+          }
+        },
+        "quote_L6c3hV": {
+          "type": "quote",
+          "settings": {
+            "logo_width": 100,
+            "author": "",
+            "content": "Write some content about what they says about your store.",
+            "show_rating": true,
+            "rating": 5
+          }
+        }
+      },
+      "block_order": [
+        "quote_CQ38dA",
+        "quote_t8B6hq",
+        "quote_L6c3hV"
+      ],
+      "name": "Press",
+      "settings": {
+        "full_width": true,
+        "content_size": "medium",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "",
+        "logo_item_border": ""
+      }
+    },
     "tabsvs_4JQfAY": {
       "type": "tabsvs",
       "blocks": {
@@ -557,90 +693,6 @@
         "lazy": true
       }
     },
-    "logoscroll_MUEA48": {
-      "type": "logoscroll",
-      "blocks": {
-        "image_gqGXha": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/BANNER_MOBILE_81.jpg",
-            "url": ""
-          }
-        },
-        "image_tdcMqt": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/BANNER_MOBILE_82.jpg",
-            "url": ""
-          }
-        },
-        "image_wYqBkH": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/BANNER_MOBILE_83.jpg",
-            "url": ""
-          }
-        },
-        "image_8BFaRK": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/BANNER_MOBILE_84.jpg",
-            "url": ""
-          }
-        },
-        "image_TX7YKh": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/BANNER_MOBILE_85.jpg",
-            "url": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_gqGXha",
-        "image_tdcMqt",
-        "image_wYqBkH",
-        "image_8BFaRK",
-        "image_TX7YKh"
-      ],
-      "name": "SS - Scrolling logo cloud #5",
-      "settings": {
-        "layout_radius": 30,
-        "layout_border_thickness": 0,
-        "heading": "",
-        "heading_custom": false,
-        "heading_font": "josefin_sans_n4",
-        "heading_size": 18,
-        "heading_size_mobile": 18,
-        "heading_height": 130,
-        "scrolling_velocity": 24,
-        "scrolling_velocity_mobile": 20,
-        "scrolling_direction": "left",
-        "pause_hover": false,
-        "scrolling_gap": 70,
-        "scrolling_gap_mobile": 14,
-        "card_width_desktop": 130,
-        "card_width_mobile": 140,
-        "heading_color": "#121212",
-        "layout_bg_color": "#ffffff",
-        "layout_border_color": "#121212",
-        "background_color": "#ffffff",
-        "border_color": "#121212",
-        "margin_top": 0,
-        "margin_bottom": 0,
-        "margin_horizontal": 0,
-        "margin_horizontal_mobile": 0,
-        "padding_top": 12,
-        "padding_bottom": 0,
-        "padding_horizontal": 5,
-        "padding_horizontal_mobile": 0,
-        "full_width": false,
-        "content_width": 1200,
-        "border_thickness": 0,
-        "section_radius": 0,
-        "lazy": true
-      }
-    },
     "rich_text_hzCzaY": {
       "type": "rich-text",
       "blocks": {
@@ -792,6 +844,7 @@
     "logoscroll_AAGtUx",
     "featured_product_fLtNjc",
     "logoscroll_MUEA48",
+    "press_fXhPaW",
     "tabsvs_4JQfAY",
     "logoscroll_WNJxWK",
     "rich_text_hzCzaY",
