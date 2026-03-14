@@ -1017,6 +1017,13 @@
             "title": "Est-il facile de trouver et de lancer les jeux sur cette console ?",
             "content": "<p>Oui, la console est équipée de fonctionnalités avancées comme la recherche de jeux et la mise en favoris, ce qui facilite l'accès aux jeux dans une bibliothèque aussi vaste. </p><p>Vous pouvez rapidement trouver le titre que vous cherchez et sauvegarder vos préférences pour un accès rapide ultérieur</p>"
           }
+        },
+        "item_mFEN4L": {
+          "type": "item",
+          "settings": {
+            "title": "Peut-on sauvegarder la progression dans les jeux ?",
+            "content": "<p>Absolument. La console permet de sauvegarder votre progression à tout moment, même dans les jeux plus anciens qui n'avaient pas cette fonction.</p><p>Cette fonctionnalité est très appréciée des joueurs modernes, car elle permet de revenir plus tard exactement là où vous vous êtes arrêté</p>"
+          }
         }
       },
       "block_order": [
@@ -1024,7 +1031,8 @@
         "166442457738b23caf-1",
         "166442457738b23caf-2",
         "item_3gaEBm",
-        "item_9W66Cm"
+        "item_9W66Cm",
+        "item_mFEN4L"
       ],
       "settings": {
         "full_width": false,
