@@ -335,6 +335,32 @@
         "input_text_color": ""
       }
     },
+    "rich_text_afVBUP": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_gJHRGh": {
+          "type": "heading",
+          "settings": {
+            "text": "+3,000 Clients Satisfaits",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_gJHRGh"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "logoscroll_MUEA48": {
       "type": "logoscroll",
       "blocks": {
@@ -1032,6 +1058,7 @@
     "herobanner_KbNjKh",
     "logoscroll_AAGtUx",
     "featured_product_fLtNjc",
+    "rich_text_afVBUP",
     "logoscroll_MUEA48",
     "press_fXhPaW",
     "videoliquid_DqkYUN",
