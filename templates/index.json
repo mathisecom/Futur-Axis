@@ -1024,6 +1024,13 @@
             "title": "Peut-on sauvegarder la progression dans les jeux ?",
             "content": "<p>Absolument. La console permet de sauvegarder votre progression à tout moment, même dans les jeux plus anciens qui n'avaient pas cette fonction.</p><p>Cette fonctionnalité est très appréciée des joueurs modernes, car elle permet de revenir plus tard exactement là où vous vous êtes arrêté</p>"
           }
+        },
+        "item_ppwPmb": {
+          "type": "item",
+          "settings": {
+            "title": "Ai-je besoin du Wi-Fi ?",
+            "content": "<p>Non, le Wi-Fi n’est pas nécessaire pour jouer. Vous pouvez profiter de vos jeux préférés où que vous soyez, même en déplacement.</p>"
+          }
         }
       },
       "block_order": [
@@ -1032,7 +1039,8 @@
         "166442457738b23caf-2",
         "item_3gaEBm",
         "item_9W66Cm",
-        "item_mFEN4L"
+        "item_mFEN4L",
+        "item_ppwPmb"
       ],
       "settings": {
         "full_width": false,
