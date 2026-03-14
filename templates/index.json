@@ -608,6 +608,33 @@
         "button_text_color": "#ffffff"
       }
     },
+    "imagetexte_edHfjT": {
+      "type": "imagetexte",
+      "name": "Image + Texte",
+      "settings": {
+        "media_position": "row",
+        "container_width": 1280,
+        "image": "shopify://shop_images/gempages_530120367851701146-a9e4f665-8732-46f7-a778-1b9e38fc5217_768x_c40468cc-4df6-490c-a3e1-12327929aa05.webp",
+        "badge_text": "",
+        "eyebrow": "",
+        "heading": "JOUEZ EN HAUTE RÉSOLUTION",
+        "text": "<p>Résolution <strong>boostée</strong>, écran lumineux, une console <strong>compacte</strong>, tout est conçu pour vous offrir la meilleure expérience. Jouez <strong>pendant 12 heures</strong> grâce à une batterie longue durée qui se recharge en un éclair.</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_font_size": 16,
+        "eyebrow_size": 13,
+        "heading_size": 29,
+        "heading_size_mobile": 20,
+        "text_size": 16,
+        "text_size_mobile": 14,
+        "padding_vertical": 80,
+        "background_color": "#ffffff",
+        "heading_color": "#25035f",
+        "text_color": "#25035f",
+        "button_bg_color": "#8b6dff",
+        "button_text_color": "#ffffff"
+      }
+    },
     "media_with_text_EMB9hR": {
       "type": "media-with-text",
       "blocks": {
@@ -637,6 +664,7 @@
       "block_order": [
         "image_RzJUw9"
       ],
+      "disabled": true,
       "name": "Media with text",
       "settings": {
         "full_width": false,
@@ -1064,6 +1092,7 @@
     "videoliquid_DqkYUN",
     "logo_list_YpqEcF",
     "videoliquid_4nzUCq",
+    "imagetexte_edHfjT",
     "media_with_text_EMB9hR",
     "tabsvs_4JQfAY",
     "logoscroll_WNJxWK",
