@@ -470,6 +470,89 @@
       "settings": {
         "media_position": "row",
         "container_width": 1200,
+        "video": "shopify://files/videos/eb1f4630748b4ad693fa6e31403e8829.mp4",
+        "video_url": "",
+        "badge_text": "",
+        "eyebrow": "",
+        "heading": "JOUEZ EN MULTIJOUEUR !",
+        "text": "<p>Vivez l'expérience ultime des classiques du jeu vidéo grâce au mode ONLINE ! Connectez facilement votre console au WiFi et affrontez ou coopérez avec vos amis en toute simplicité grâce au mode MULTIJOUEUR.</p>",
+        "button_label": "Profiter de l'offre !",
+        "button_link": "",
+        "button_font_size": 16,
+        "eyebrow_size": 13,
+        "heading_size": 33,
+        "heading_size_mobile": 23,
+        "text_size": 16,
+        "text_size_mobile": 12,
+        "padding_vertical": 80,
+        "background_color": "#ffffff",
+        "heading_color": "#25035f",
+        "text_color": "#25035f",
+        "button_bg_color": "#25035f",
+        "button_text_color": "#ffffff"
+      }
+    },
+    "logo_list_YpqEcF": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_yPdNEj": {
+          "type": "logo",
+          "settings": {
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "logo_7TJ7RB": {
+          "type": "logo",
+          "settings": {
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "logo_wHiAPX": {
+          "type": "logo",
+          "settings": {
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "logo_eY9CPW": {
+          "type": "logo",
+          "settings": {
+            "logo_width": 120,
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_yPdNEj",
+        "logo_7TJ7RB",
+        "logo_wHiAPX",
+        "logo_eY9CPW"
+      ],
+      "name": "Logo list",
+      "settings": {
+        "full_width": true,
+        "stack_mobile": true,
+        "title": "Logo list",
+        "content": "",
+        "text_alignment": "center",
+        "items_per_row": 5,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "",
+        "logo_item_border": ""
+      }
+    },
+    "videoliquid_4nzUCq": {
+      "type": "videoliquid",
+      "name": "Vidéo + Texte",
+      "settings": {
+        "media_position": "row",
+        "container_width": 1200,
         "video": "shopify://files/videos/004bc71bc4554d66a41b5d63c0255c82.HD-1080p-3.3Mbps-72192089 (1).mp4",
         "video_url": "",
         "badge_text": "",
@@ -933,6 +1016,8 @@
     "logoscroll_MUEA48",
     "press_fXhPaW",
     "videoliquid_DqkYUN",
+    "logo_list_YpqEcF",
+    "videoliquid_4nzUCq",
     "media_with_text_EMB9hR",
     "tabsvs_4JQfAY",
     "logoscroll_WNJxWK",
