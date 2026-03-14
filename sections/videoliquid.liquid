@@ -114,16 +114,20 @@
      VARIABLES
   ============================================================ */
   #section-{{ section.id }} {
-    --vf-bg:            {{ section.settings.background_color }};
-    --vf-heading-color: {{ section.settings.heading_color }};
-    --vf-text-color:    {{ section.settings.text_color }};
-    --vf-btn-bg:        {{ section.settings.button_bg_color }};
-    --vf-btn-text:      {{ section.settings.button_text_color }};
-    --vf-btn-radius:    50px;
-    --vf-media-radius:  16px;
-    --vf-gap:           60px;
-    --vf-padding-v:     80px;
-    --vf-padding-h:     40px;
+    --vf-bg:              {{ section.settings.background_color }};
+    --vf-heading-color:   {{ section.settings.heading_color }};
+    --vf-text-color:      {{ section.settings.text_color }};
+    --vf-btn-bg:          {{ section.settings.button_bg_color }};
+    --vf-btn-text:        {{ section.settings.button_text_color }};
+    --vf-btn-radius:      50px;
+    --vf-media-radius:    16px;
+    --vf-gap:             60px;
+    --vf-padding-v:       {{ section.settings.padding_vertical }}px;
+    --vf-padding-h:       40px;
+    --vf-eyebrow-size:    {{ section.settings.eyebrow_size }}px;
+    --vf-heading-size:    {{ section.settings.heading_size }}px;
+    --vf-text-size:       {{ section.settings.text_size }}px;
+    --vf-btn-size:        {{ section.settings.button_font_size }}px;
   }
 
   /* ============================================================
@@ -223,7 +227,7 @@
   }
 
   .video-feature-content__eyebrow {
-    font-size: 13px;
+    font-size: var(--vf-eyebrow-size);
     font-weight: 700;
     letter-spacing: 0.15em;
     text-transform: uppercase;
@@ -232,7 +236,7 @@
   }
 
   .video-feature-content__heading {
-    font-size: clamp(26px, 3.5vw, 42px);
+    font-size: var(--vf-heading-size);
     font-weight: 900;
     line-height: 1.1;
     letter-spacing: 0.02em;
@@ -242,7 +246,7 @@
   }
 
   .video-feature-content__text {
-    font-size: clamp(14px, 1.6vw, 17px);
+    font-size: var(--vf-text-size);
     line-height: 1.7;
     color: var(--vf-text-color);
     margin: 0;
@@ -261,7 +265,7 @@
     padding: 18px 32px;
     background: var(--vf-btn-bg);
     color: var(--vf-btn-text);
-    font-size: 16px;
+    font-size: var(--vf-btn-size);
     font-weight: 700;
     letter-spacing: 0.03em;
     text-align: center;
@@ -302,6 +306,8 @@
       --vf-gap: 28px;
       --vf-padding-v: 48px;
       --vf-padding-h: 20px;
+      --vf-heading-size: {{ section.settings.heading_size_mobile }}px;
+      --vf-text-size:    {{ section.settings.text_size_mobile }}px;
     }
 
     .video-feature-container {
@@ -426,6 +432,77 @@
       "type": "url",
       "id": "button_link",
       "label": "Lien du bouton"
+    },
+    {
+      "type": "range",
+      "id": "button_font_size",
+      "label": "Taille du texte du bouton (px)",
+      "min": 12,
+      "max": 28,
+      "step": 1,
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "🔤 Typographie"
+    },
+    {
+      "type": "range",
+      "id": "eyebrow_size",
+      "label": "Taille du sous-titre (px)",
+      "min": 10,
+      "max": 24,
+      "step": 1,
+      "default": 13
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "label": "Taille du titre — Desktop (px)",
+      "min": 18,
+      "max": 72,
+      "step": 1,
+      "default": 42
+    },
+    {
+      "type": "range",
+      "id": "heading_size_mobile",
+      "label": "Taille du titre — Mobile (px)",
+      "min": 16,
+      "max": 52,
+      "step": 1,
+      "default": 28
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "label": "Taille du texte — Desktop (px)",
+      "min": 12,
+      "max": 28,
+      "step": 1,
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "text_size_mobile",
+      "label": "Taille du texte — Mobile (px)",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "default": 14
+    },
+    {
+      "type": "header",
+      "content": "📐 Espacement"
+    },
+    {
+      "type": "range",
+      "id": "padding_vertical",
+      "label": "Padding vertical de la section (px)",
+      "min": 20,
+      "max": 160,
+      "step": 4,
+      "default": 80
     },
     {
       "type": "header",
