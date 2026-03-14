@@ -426,8 +426,8 @@
           "type": "quote",
           "settings": {
             "logo_width": 100,
-            "author": "",
-            "content": "Write some content about what they says about your store.",
+            "author": "Lucas D.",
+            "content": "Incroyable pour le prix ! Plus de 20 000 jeux et ça marche nickel en WiFi avec mon fils. On kiffe.",
             "show_rating": true,
             "rating": 5
           }
@@ -436,8 +436,8 @@
           "type": "quote",
           "settings": {
             "logo_width": 100,
-            "author": "",
-            "content": "Write some content about what they says about your store.",
+            "author": "Camille T.",
+            "content": "Reçu en 3 jours, prise en main immédiate. Les graphismes sont vraiment nets pour une console de cette taille.",
             "show_rating": true,
             "rating": 4
           }
@@ -446,8 +446,8 @@
           "type": "quote",
           "settings": {
             "logo_width": 100,
-            "author": "",
-            "content": "Write some content about what they says about your store.",
+            "author": "Maxime R.",
+            "content": "Je l'emporte partout, elle est légère et la batterie tient bien. Le multijoueur via WiFi est un gros plus !",
             "show_rating": true,
             "rating": 5
           }
@@ -899,9 +899,9 @@
             "round_avatar": true,
             "show_rating": true,
             "rating": 4,
-            "author": "John S.",
+            "author": "Lucas D.",
             "title": "Testimonial 1",
-            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
+            "content": "<p>Incroyable pour le prix ! Plus de 20 000 jeux et ça marche nickel en WiFi avec mon fils. On kiffe.</p>"
           }
         },
         "testimonial_mXXrUx": {
@@ -910,9 +910,9 @@
             "round_avatar": true,
             "show_rating": true,
             "rating": 5,
-            "author": "Mary U.",
+            "author": "Camille T.",
             "title": "Testimonial 2",
-            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
+            "content": "<p>Reçu en 3 jours, prise en main immédiate. Les graphismes sont vraiment nets pour une console de cette taille.</p>"
           }
         },
         "testimonial_Q3pnwa": {
@@ -921,16 +921,28 @@
             "round_avatar": true,
             "show_rating": true,
             "rating": 4,
-            "author": "Joshua A.",
-            "title": "Testimonial 3",
-            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
+            "author": "Maxime R.",
+            "title": "Je l'emporte partout",
+            "content": "<p>Je l'emporte partout, elle est légère et la batterie tient bien. Le multijoueur via WiFi est un gros plus !</p>"
+          }
+        },
+        "testimonial_Axj8Gy": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 4,
+            "author": "Nathalie B.",
+            "title": "Je l'emporte partout",
+            "content": "<p>Parfait pour retrouver les classiques de mon enfance. L'ajout de jeux via carte SD est super simple.</p>"
           }
         }
       },
       "block_order": [
         "testimonial_AD3LPE",
         "testimonial_mXXrUx",
-        "testimonial_Q3pnwa"
+        "testimonial_Q3pnwa",
+        "testimonial_Axj8Gy"
       ],
       "name": "Testimonials",
       "settings": {
