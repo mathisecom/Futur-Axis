@@ -267,17 +267,17 @@
         "collapsible_text_An77Am": {
           "type": "collapsible_text",
           "settings": {
-            "icon": "none",
+            "icon": "picto-truck",
             "icon_width": 20,
-            "title": "Title",
-            "content": "<p>Share some content to your customers about your products.</p>",
+            "title": "Livraison & Retour",
+            "content": "<p>🚚 Livraison : GRATUITE</p><p>⏰ Délais : France et Europe : expédition en 48h, livraison 5 à 7 jours ouvrable</p><p>🔄 Retours et échanges : Retours GRATUITS sous 14 jours Remboursement ou échange selon votre choix</p>",
             "page": ""
           }
         },
         "collapsible_text_LRA4Jp": {
           "type": "collapsible_text",
           "settings": {
-            "icon": "none",
+            "icon": "picto-file",
             "icon_width": 20,
             "title": "Inclus dans le Pack",
             "content": "<p>✓ 1 Console Futur Axis</p><p>✓ 1 Câble de charge </p><p>✓ 20 000 jeux inclus </p><p>✓ 1 Manuel d'utilisation</p><p>+ Un cadeau mystère</p>",
