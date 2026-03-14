@@ -279,8 +279,8 @@
           "settings": {
             "icon": "none",
             "icon_width": 20,
-            "title": "Title",
-            "content": "<p>Share some content to your customers about your products.</p>",
+            "title": "Inclus dans le Pack",
+            "content": "<p>✓ 1 Console Futur Axis</p><p>✓ 1 Câble de charge </p><p>✓ 20 000 jeux inclus </p><p>✓ 1 Manuel d'utilisation</p><p>+ Un cadeau mystère</p>",
             "page": ""
           }
         }
