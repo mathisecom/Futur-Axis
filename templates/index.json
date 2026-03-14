@@ -986,15 +986,15 @@
         "166442457738b23caf-0": {
           "type": "item",
           "settings": {
-            "title": "Do you ship overseas?",
-            "content": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.</p>"
+            "title": "Quels types de jeux sont inclus ?",
+            "content": "<p>La console inclut une large variété de jeux classiques issus de plus de 40 consoles.</p><p>Vous trouverez des titres populaires comme Pokémon, Super Mario, Zelda, Final Fantasy, Sonic, Street Fighter, et bien d'autres.</p><p>Ces jeux couvrent des consoles telles que la Nintendo 64, GameBoy, PlayStation, PSP, Sega Megadrive, Dreamcast, ainsi que des systèmes comme la DS.</p><p>Cela signifie que vous pourrez revivre de nombreux classiques incontournables qui ont marqué l'histoire du jeu vidéo</p>"
           }
         },
         "166442457738b23caf-1": {
           "type": "item",
           "settings": {
-            "title": "How long will it take to get my orders?",
-            "content": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.</p>"
+            "title": "La console est-elle disponible en français et en plusieurs langues ?",
+            "content": "<p>Oui ! 🎮 Notre console est <strong>multilingue</strong> et prend en charge les langues les plus courantes. Vous pouvez facilement sélectionner votre langue préférée dans les paramètres.</p><p>✅ <strong>Langues disponibles :</strong></p><ul><li>🇫🇷 <strong>Français</strong></li><li>🇬🇧 <strong>Anglais</strong></li><li>🇪🇸 <strong>Espagnol</strong></li><li>🇩🇪 <strong>Allemand</strong></li><li>🇮🇹 <strong>Italien</strong></li><li>🇵🇹 <strong>Portugais</strong></li><li>🇳🇱 <strong>Néerlandais</strong></li><li>🇯🇵 <strong>Japonais</strong></li><li>🇰🇷 <strong>Coréen</strong></li><li>🇷🇺 <strong>Russe</strong></li></ul><p>D’autres langues sont également disponibles, et des mises à jour peuvent en ajouter de nouvelles ! 🚀</p>"
           }
         },
         "166442457738b23caf-2": {
