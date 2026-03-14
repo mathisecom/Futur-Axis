@@ -1087,6 +1087,32 @@
         "accordion_text_color": ""
       }
     },
+    "featured_collection_b7HDQn": {
+      "type": "featured-collection",
+      "name": "Featured collection",
+      "settings": {
+        "collection": "",
+        "products": [],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": true,
+        "products_count": 6,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "Nos Accessoires",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
     "custom_html_diQYaw": {
       "type": "custom-html",
       "name": "Custom HTML",
@@ -1118,6 +1144,7 @@
     "rich_text_hzCzaY",
     "testimonials_TfxXVT",
     "faq",
+    "featured_collection_b7HDQn",
     "custom_html_diQYaw"
   ]
 }
