@@ -124,9 +124,43 @@
         "input_background": "rgba(0,0,0,0)",
         "input_text_color": ""
       }
+    },
+    "featured_collection_KedNjf": {
+      "type": "featured-collection",
+      "name": "Featured collection",
+      "settings": {
+        "collection": "",
+        "products": [
+          "console-de-jeux-retro-de-poche-15-000-jeux-classiques-ecran-ips-3-5-autonomie-8h",
+          "boitier-anti-choc",
+          "bo-te-carplay-android-auto-sans-fil",
+          "boitier-anti-choc-ecran-anti-rayure",
+          "coque-en-silicone-resistante-aux-chutes-aux-rayures-a-la-poussiere-et-a-l-eau",
+          "capuchons-joystick-retro"
+        ],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": true,
+        "products_count": 6,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "featured_collection_KedNjf"
   ]
 }
