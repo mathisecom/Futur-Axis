@@ -76,7 +76,7 @@
         "collapsible_text_Ay3BGN": {
           "type": "collapsible_text",
           "settings": {
-            "icon": "none",
+            "icon": "picto-truck",
             "icon_width": 20,
             "title": "Livraison Colissimo Offerte",
             "content": "<p>🚚 Livraison Express Offerte</p><p>Nous traitons les produits le jour même de la commande.</p><p>🔄 Retours et échanges : Retours GRATUITS sous 14 jours Remboursement ou échange selon votre choix</p>",
@@ -86,7 +86,7 @@
         "collapsible_text_wMhPtQ": {
           "type": "collapsible_text",
           "settings": {
-            "icon": "none",
+            "icon": "picto-return",
             "icon_width": 20,
             "title": "Garantie 100% satisfait ou remboursé",
             "content": "<p>Achetez en toute sérénité avec notre garantie de 14 jours. Si vous n'êtes pas entièrement satisfait de votre achat, vous pouvez le retourner dans les 14 jours pour un échange ou un remboursement complet.</p>",
