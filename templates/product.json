@@ -86,12 +86,11 @@
         },
         "collapsible_text_wMhPtQ": {
           "type": "collapsible_text",
-          "disabled": true,
           "settings": {
             "icon": "none",
             "icon_width": 20,
-            "title": "Title",
-            "content": "<p>Share some content to your customers about your products.</p>",
+            "title": "Garantie 100% satisfait ou remboursé",
+            "content": "<p>Achetez en toute sérénité avec notre garantie de 14 jours. Si vous n'êtes pas entièrement satisfait de votre achat, vous pouvez le retourner dans les 14 jours pour un échange ou un remboursement complet.</p>",
             "page": ""
           }
         }
