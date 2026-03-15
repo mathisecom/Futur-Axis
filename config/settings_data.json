@@ -34,7 +34,7 @@
     "heading_letter_spacing": -3.5,
     "text_font": "plus_jakarta_sans_n4",
     "heading_apparition": "split_fade",
-    "color_swatch_config": "Violet: #9577C3\nGris: #B8B8B8\nOrange: #FCA64D\nBleu: #4D79A2\nBlanc: #D2D2D0\nRouge: #C85669",
+    "color_swatch_config": "Violet: #9577C3\nGris: #B8B8B8\nOrange: #FCA64D\nBleu: #4D79A2\nBlanc: #D2D2D0\nRouge: #C85669\nNoir: #000000",
     "discount_mode": "percentage",
     "product_color_display": "swatch",
     "product_info_alignment": "start",
