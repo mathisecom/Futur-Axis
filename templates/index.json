@@ -1110,7 +1110,7 @@
       "type": "featured-collection",
       "name": "Featured collection",
       "settings": {
-        "collection": "",
+        "collection": "accessoires",
         "products": [],
         "full_width": true,
         "stack_products": false,
