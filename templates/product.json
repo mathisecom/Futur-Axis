@@ -75,12 +75,11 @@
         },
         "collapsible_text_Ay3BGN": {
           "type": "collapsible_text",
-          "disabled": true,
           "settings": {
             "icon": "none",
             "icon_width": 20,
-            "title": "Title",
-            "content": "<p>Share some content to your customers about your products.</p>",
+            "title": "Livraison Colissimo Offerte",
+            "content": "<p>🚚 Livraison Express Offerte</p><p>Nous traitons les produits le jour même de la commande.</p><p>🔄 Retours et échanges : Retours GRATUITS sous 14 jours Remboursement ou échange selon votre choix</p>",
             "page": ""
           }
         },
